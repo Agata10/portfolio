@@ -8,11 +8,13 @@ import Projects from './components/Projects';
 const Layout = () => {
   return (
     <>
-      <Header />
-      <Greeting />
-      <About />
-      <Projects />
-      <Contact />
+      <div className="h-screen">
+        <Header />
+        <Greeting />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
       <Footer />
     </>
   );
