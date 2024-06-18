@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
-    <ul className="flex gap-8 items-center">
+    <ul className="flex gap-8 items-center slide-to-left">
       <li>
         <Link to="about" smooth={true} duration={500} className="nav-link">
           About

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,4 +39,138 @@
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.box img {
+  position: relative;
+  z-index: 10;
+}
+
+.box {
+  position: relative;
+}
+
+
+.box::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  border: 2px solid transparent;
+  height: 256px;
+  width: 288px;
+  animation: drawBorder 4s ease-in-out infinite;
+}
+
+
+
+@keyframes drawBorder {
+  0% {
+    opacity: 0.6;
+    border-left-color: #FF5714;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  25% {
+    border-left-color: transparent;
+    border-top-color: #FF5714;
+    opacity: 1;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  50% {
+    opacity: 0.6;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: #FF5714;
+    border-bottom-color: transparent;
+  }
+
+  75% {
+    opacity: 1;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #FF5714
+  }
+
+  100% {
+    opacity: 1;
+    border-left-color: #FF5714;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
+
+.logo-rotate {
+  animation: rotate 2s forwards ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+
+  }
+}
+
+.slide-to-left {
+  animation: slide-left 2s forwards;
+}
+
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(400%);
+  }
+
+  100% {
+    transform: translateX(0);
+
+  }
+}
+
+.slide-to-right {
+  opacity: 0.3;
+  animation: slide-right 2s forwards, fade-in 2s forwards 2s;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-400%);
+  }
+
+  100% {
+    transform: translateX(0);
+
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.3;
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
