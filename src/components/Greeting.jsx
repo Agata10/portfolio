@@ -10,7 +10,7 @@ const Greeting = () => {
         <h6 className="font-main font-semibold tracking-wide text-4xl text-wh">
           I'm a full-stack developer.
         </h6>
-        <p className="w-11/12 sm:w-10/12 leading-8 sm:leading-6">
+        <p className="w-11/12 sm:w-9/12 leading-8 sm:leading-8 font-par">
           Creative proffesional passionate about designing appealing and
           user-friendly websites. Ready and excited to transition into the world
           of IT.

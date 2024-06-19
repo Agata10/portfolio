@@ -1,9 +1,9 @@
 import Navbar from './Navbar';
-import logo from '../assets/A.png';
+import logo from '../assets/ADarker.png';
 const Header = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full gap-4 sm:gap-0 px-10 sm:px-36 h-20 mt-4 sm:mt-2">
-      <img src={logo} alt="logo" className="h-16 logo-rotate" />
+    <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full gap-4 sm:gap-0 px-10 sm:px-36 h-20 bg-darker sticky top-0 left-0 z-10">
+      <img src={logo} alt="logo" className="h-14 logo-rotate" />
       <Navbar />
     </div>
   );

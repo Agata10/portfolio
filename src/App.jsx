@@ -1,13 +1,11 @@
-import Layout from "./Layout"
+import Layout from './Layout';
 
 function App() {
-
-
   return (
-    <>
-    <Layout/>
-    </>
-  )
+    <div className="bg-dark text-wh">
+      <Layout />
+    </div>
+  );
 }
 
-export default App
+export default App;

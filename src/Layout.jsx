@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 const Layout = () => {
   return (
     <>
-      <div className="h-screen">
+      <div className="h-screen text-wh bg-dark">
         <Header />
         <Greeting />
         <About />
