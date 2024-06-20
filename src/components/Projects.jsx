@@ -21,14 +21,14 @@ const projects = [
     name: 'StrengthEra',
     git_link: 'https://github.com/Agata10/Strengthera',
     site_link: 'https://strengthera.netlify.app',
-    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'API'],
+    technologies: ['React', 'Tailwind CSS', 'API'],
   },
   {
     name: 'MapSketcher - figma plugin',
     git_link: 'https://github.com/Agata10/figma-plugin-mapSketcher',
     site_link:
       'https://www.figma.com/community/plugin/1339309615155736818/map-sketcher',
-    technologies: ['React', 'TypeScript', 'CSS', 'Figma Plugin API', 'Webpack'],
+    technologies: ['React', 'TypeScript', 'Figma Plugin API', 'Webpack'],
   },
   {
     name: 'MovieFinder',
@@ -46,7 +46,7 @@ const projects = [
     name: 'TaskManager',
     git_link: 'https://github.com/Agata10/Todo-app',
     site_link: 'https://agata10.github.io/Todo-app/',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
+    technologies: ['JavaScript', 'HTML/CSS', 'Webpack'],
   },
 ];
 
