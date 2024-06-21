@@ -5,12 +5,10 @@ const About = () => {
     <Element
       name="about"
       id="about"
-      className="element w-full flex justify-center  "
+      className="element w-full flex justify-center  slide-to-right"
     >
       <div className="w-10/12 sm:w-9/12 mt-10 sm:mt-24">
-        <h2 className="text-3xl text-or font-nav text-left show-on-blur py-4">
-          About me
-        </h2>
+        <h2 className="text-3xl text-or font-nav text-left py-4">About me</h2>
         <p className="font-par w-full sm:w-6/12 text-base leading-8 pb-6">
           I am a passionate about technology since my Control Engineering
           studies. My educational journey has given me a solid foundation in

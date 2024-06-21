@@ -123,8 +123,7 @@
 }
 
 .slide-to-right {
-  opacity: 0.3;
-  animation: slide-right 2s forwards, fade-in 2s forwards 2s;
+  animation: slide-right 2s forwards;
 }
 
 @keyframes slide-right {
