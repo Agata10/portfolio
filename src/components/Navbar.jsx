@@ -33,6 +33,15 @@ const Navbar = () => {
           Contact me
         </Link>
       </li>
+      <li className="text-or nav-link font-nav cursor-pointer">
+        <a
+          href="https://drive.google.com/file/d/1jObHhNbHiC_kMMwfkUy3tQ-TfeGVk5Na/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+      </li>
     </ul>
   );
 };
