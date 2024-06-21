@@ -63,11 +63,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Element
-      name="projects"
-      className="element w-full flex justify-center pt-14"
-    >
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-9/12 ">
+    <Element name="projects" className="element w-full flex justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-9/12 pt-14 sm:pt-24">
         <h2 className="col-span-1 sm:col-span-2 lg:col-span-3 text-3xl text-or font-nav text-center show-on-blur pb-6">
           My Projects
         </h2>

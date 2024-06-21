@@ -4,9 +4,10 @@ const About = () => {
   return (
     <Element
       name="about"
-      className="element w-full flex justify-center pt-10 sm:mt-32"
+      id="about"
+      className="element w-full flex justify-center  "
     >
-      <div className="w-10/12 sm:w-9/12">
+      <div className="w-10/12 sm:w-9/12 mt-10 sm:mt-24">
         <h2 className="text-3xl text-or font-nav text-left show-on-blur py-4">
           About me
         </h2>
