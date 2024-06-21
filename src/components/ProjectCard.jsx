@@ -2,7 +2,7 @@ import { useState } from 'react';
 // import { ReactComponent as GitIcon } from '../assets/icons/github.svg';
 import web from '../assets/icons/globe.svg';
 
-const ProjectCard = ({ name, git_link, site_link, technologies }) => {
+const ProjectCard = ({ src, name, git_link, site_link, technologies }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
   const [isGitHovered, setIsGitHovered] = useState(false);
@@ -37,27 +37,27 @@ const ProjectCard = ({ name, git_link, site_link, technologies }) => {
 
   return (
     <div
-      className="flex flex-col justify-between border-darker border-2 relative px-4 pt-4 rounded-lg overflow-hidden"
+      className="flex flex-col border-darker border-2 relative px-4 pt-4 rounded-2xl overflow-hidden items-center show-on-blur"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      <img src={src} alt={name} className="h-40 w-10/12 rounded-md"></img>
       <h3 className="text-2xl text-center font-main py-4">{name}</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-2 justify-center">
+      <div className="flex flex-wrap gap-x-1 gap-y-1 justify-center">
         {technologies.map((t) => (
           <div
             key={crypto.randomUUID()}
             style={{
               backgroundColor: 'rgba(27,27,27, 0.3)',
-              color: '#474647',
             }}
-            className="border-darker border-2 rounded-xl py-1 px-2 text-md font-main"
+            className="border-darker border-2 rounded-xl py-1 px-2 text-sm font-main text-slate-300"
           >
             {t}
           </div>
         ))}
       </div>
-      <div className="flex pt-6 justify-center gap-10 pb-2">
+      <div className="flex pt-4 justify-center gap-6 pb-4 mt-auto">
         <a
           href={git_link}
           onMouseEnter={handleLnkHover}

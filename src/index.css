@@ -140,11 +140,11 @@
 
 @keyframes fade-in {
   0% {
-    opacity: 0.3;
+    opacity: 0;
   }
 
   25% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
 
   50% {
@@ -158,4 +158,8 @@
   100% {
     opacity: 1;
   }
+}
+
+.show-on-blur {
+  animation: fade-in 5s forwards;
 }
