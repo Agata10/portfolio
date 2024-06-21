@@ -32,7 +32,7 @@ const projects = [
   },
   {
     src: map,
-    name: 'MapSketcher - figma plugin',
+    name: 'MapSketcher',
     git_link: 'https://github.com/Agata10/figma-plugin-mapSketcher',
     site_link:
       'https://www.figma.com/community/plugin/1339309615155736818/map-sketcher',
@@ -67,7 +67,7 @@ const Projects = () => {
       name="projects"
       className="element w-full flex justify-center pt-10"
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-9/12 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-9/12 ">
         <h2 className="col-span-1 sm:col-span-2 lg:col-span-3 text-3xl text-or font-nav text-center show-on-blur">
           My Projects
         </h2>

@@ -161,5 +161,6 @@
 }
 
 .show-on-blur {
-  animation: fade-in 5s forwards;
+  opacity: 0;
+  animation: fade-in 5s ease-out forwards 1s;
 }
