@@ -1,8 +1,24 @@
-# React + Vite
+# porfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio website!
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [About](#about)
+- [Technologies](#technologies)
+- [Site link](#site-link)
+
+## About
+
+I created the website using React and Tailwind CSS. It's a simple website showcasing my recent projects with a little bit of CSS animations.
+
+## Technologies
+
+- Tailwind CSS
+- JavaScript
+- React
+- react scroll package
+
+## Site link
+
+https://a-deter.onrender.com/
