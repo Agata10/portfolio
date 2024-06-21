@@ -102,7 +102,7 @@ const ProjectCard = ({ src, name, git_link, site_link, technologies }) => {
             width="16"
             height="16"
             fill={isSiteHovered ? '#FF5714' : 'whitesmoke'}
-            className="bi bi-globe mr-2 w-4 "
+            className="bi bi-globe mr-2 w-4"
             style={{
               transition: 'all 0.3s ease-in',
             }}
