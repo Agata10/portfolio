@@ -172,3 +172,11 @@
   content: '➤';
   color: #FF5714;
 }
+
+@media (max-width: 500px) {
+  .list-arrow li::before {
+
+    padding-right: 6px;
+
+  }
+}

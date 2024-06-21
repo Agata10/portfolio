@@ -1,9 +1,7 @@
 import Navbar from './Navbar';
 import logo from '../assets/ADarker.png';
 import { useState } from 'react';
-const Header = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
-
+const Header = ({ showNavbar, setShowNavbar }) => {
   const toggleNavbar = () => {
     setShowNavbar(!showNavbar);
   };
@@ -32,7 +30,7 @@ const Header = () => {
           </svg>
         </button>
       </div>
-      <Navbar showNavbar={showNavbar} />
+      <Navbar showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
     </div>
   );
 };

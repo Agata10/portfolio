@@ -1,6 +1,6 @@
 import { Element } from 'react-scroll';
 
-const About = () => {
+const About = ({ clicked }) => {
   return (
     <Element
       name="about"
@@ -23,7 +23,7 @@ const About = () => {
         </p>
         <div className="font-par w-full sm:w67/12 text-base leading-8">
           Here are some of the latest technologies I've been working with:
-          <div className="flex gap-10 pt-2">
+          <div className="flex gap-6 sm:gap-10 pt-2">
             <ul className="list-arrow text-sm font-main">
               <li>JavaScript</li>
               <li>React</li>

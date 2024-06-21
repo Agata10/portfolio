@@ -2,7 +2,7 @@ import Layout from './Layout';
 
 function App() {
   return (
-    <div className="bg-dark text-wh">
+    <div className="bg-dark text-wh overflow-x-hidden">
       <Layout />
     </div>
   );

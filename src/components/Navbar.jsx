@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 
-const Navbar = ({ showNavbar }) => {
+const Navbar = ({ showNavbar, setShowNavbar }) => {
+  const [click, setClicked] = useState(false);
   return (
     <ul
       className={`sm:flex sm:flex-row sm:gap-6 sm:px-0 items-center justify-end sm:slide-to-left ${
@@ -12,9 +14,14 @@ const Navbar = ({ showNavbar }) => {
       <li>
         <Link
           to="about"
+          offset={click === 'about' ? -100 : 0}
           smooth={true}
           duration={500}
           className="nav-link font-nav cursor-pointer"
+          onClick={() => {
+            setClicked('about');
+            setShowNavbar((prev) => !prev);
+          }}
         >
           About
         </Link>
@@ -22,9 +29,14 @@ const Navbar = ({ showNavbar }) => {
       <li>
         <Link
           to="projects"
+          offset={click === 'projects' ? -100 : 0}
           smooth={true}
           duration={500}
           className="nav-link font-nav cursor-pointer"
+          onClick={() => {
+            setClicked('projects');
+            setShowNavbar((prev) => !prev);
+          }}
         >
           Projects
         </Link>
@@ -35,6 +47,10 @@ const Navbar = ({ showNavbar }) => {
           smooth={true}
           duration={500}
           className="nav-link font-nav cursor-pointer"
+          onClick={() => {
+            setClicked('contact');
+            setShowNavbar((prev) => !prev);
+          }}
         >
           Contact me
         </Link>
