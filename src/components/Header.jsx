@@ -10,19 +10,19 @@ const Header = () => {
 
   return (
     <div
-      className={`flex flex-col sm:flex-row justify-between items-center w-full gap-4 sm:gap-0 h-20 sm:px-40 bg-darker sticky top-0 left-0 z-10 ${
-        showNavbar ? 'mb-24' : 'mb-0'
+      className={`flex sm:flex-row justify-between items-center w-full sm:gap-0 min-h-20 sm:px-40 bg-darker sticky top-0 left-0 z-10 ${
+        showNavbar ? 'flex-col' : 'flex-row'
       }`}
     >
-      <div className="flex justify-between items-center w-full sm:w-6/12 pt-2 sm:pt-0 px-10 sm:px-0">
+      <div className="flex justify-between items-center w-full sm:w-6/12 px-10 sm:px-0 h-20 ">
         <img src={logo} alt="logo" className="h-14 logo-rotate" />
-        <button onClick={toggleNavbar}>
+        <button onClick={toggleNavbar} className="sm:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
             height="36"
-            fill="#FF5714"
-            className="bi bi-list sm:hidden"
+            fill="whitesmoke"
+            className="bi bi-list sm:hidden hover:fill-or transition-all ease-in duration-300 hover:scale-110"
             viewBox="0 0 16 16"
           >
             <path

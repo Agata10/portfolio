@@ -3,9 +3,9 @@ import { Link } from 'react-scroll';
 const Navbar = ({ showNavbar }) => {
   return (
     <ul
-      className={`sm:flex sm:flex-row sm:gap-6 sm:px-0 items-center sm:slide-to-left ${
+      className={`sm:flex sm:flex-row sm:gap-6 sm:px-0 items-center justify-end sm:slide-to-left ${
         showNavbar
-          ? 'flex bg-darker flex-col gap-1 w-full px-10 pb-2'
+          ? 'flex bg-darker flex-col w-full px-10 sm:flex-row gap-2 pb-2'
           : 'hidden'
       } `}
     >
