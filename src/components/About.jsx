@@ -21,7 +21,7 @@ const About = () => {
           looking forward to joining a company that will allow me to grow and
           continue developing my passion for the tech industry.
         </p>
-        <p className="font-par w-full sm:w67/12 text-base leading-8">
+        <div className="font-par w-full sm:w67/12 text-base leading-8">
           Here are some of the latest technologies I've been working with:
           <div className="flex gap-10 pt-2">
             <ul className="list-arrow text-sm font-main">
@@ -40,7 +40,7 @@ const About = () => {
               <li>Figma</li>
             </ul>
           </div>
-        </p>
+        </div>
       </div>
     </Element>
   );

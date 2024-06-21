@@ -1,8 +1,14 @@
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({ showNavbar }) => {
   return (
-    <ul className="flex gap-6 items-center slide-to-left">
+    <ul
+      className={`sm:flex sm:flex-row sm:gap-6 sm:px-0 items-center sm:slide-to-left ${
+        showNavbar
+          ? 'flex bg-darker flex-col gap-1 w-full px-10 pb-2'
+          : 'hidden'
+      } `}
+    >
       <li>
         <Link
           to="about"
