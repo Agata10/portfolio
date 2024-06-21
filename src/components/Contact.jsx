@@ -11,7 +11,7 @@ const Contact = () => {
           Get in touch
         </h2>
         <div className="flex gap-x-8">
-          <a href={`mailto:${import.meta.env.EMAIL}`}>
+          <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
