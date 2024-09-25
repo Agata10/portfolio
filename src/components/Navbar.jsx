@@ -57,7 +57,7 @@ const Navbar = ({ showNavbar, setShowNavbar }) => {
       </li>
       <li className="text-or nav-link font-nav cursor-pointer">
         <a
-          href="https://drive.google.com/file/d/1jObHhNbHiC_kMMwfkUy3tQ-TfeGVk5Na/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Ceko6FDQutXedwNGYIhtNNkvn5DwGATI/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
